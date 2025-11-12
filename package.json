@@ -1,3 +1,25 @@
+// package.json
+
+{
+  "name": "...",
+  "private": true,
+  "version": "0.0.0",
+  // 1. ADD THIS LINE (after "version" or "private"):
+  "homepage": "https://saiyugandhar0720.github.io/sai-portfolio", 
+  
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "...",
+    "preview": "vite preview",
+    
+    // 2. ADD THESE TWO LINES INSIDE THE "scripts" BLOCK:
+    "predeploy": "npm run build", 
+    "deploy": "gh-pages -d dist"
+  },
+  // ... rest of the file
+}
 {
   "name": "portfolio-live",
   "private": true,
